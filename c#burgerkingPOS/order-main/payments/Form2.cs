@@ -172,7 +172,39 @@ namespace projecttest
         }
         #endregion
 
- 
+        #region
+        public void InventoryHistoryChange()
+        {
+            try
+            {
+                if (db.OpenConnection())
+                {
+                    string query = $"INSERT INTO inventory_history (menu_id, menu_name, change_quantity, time) " +
+                                    $"SELECT om.menu_id, m.menu_name, CONCAT('-', om.quantity), p.payment_time " +
+                                    $"FROM `order` o " +
+                                    $"JOIN order_menu om ON o.order_id = om.order_id " +
+                                    $"JOIN menu m ON om.menu_id = m.menu_id " +
+                                    $"JOIN payment p ON o.order_id = p.order_id " +
+                                    $"WHERE NOT EXISTS (SELECT 1 FROM inventory_history ih WHERE ih.menu_id = om.menu_id AND ih.time = p.payment_time);";
+
+                    MySqlCommand command = new MySqlCommand(query, db.GetConnection());
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("수량업데이트 도중 오류가 발생했습니다: " + ex.Message);
+            }
+            finally
+            {
+                if (db != null)
+                {
+                    db.CloseConnection();
+                }
+            }
+        }
+
+        #endregion
 
         #region payment 테이블 저장 쿼리문 AddPaymentToDatabase()
 
@@ -285,7 +317,7 @@ namespace projecttest
 
                             UpdateInventoryStock(menuId, quantity);
 
-                            
+                            InventoryHistoryChange();
                         }
 
 
@@ -350,7 +382,8 @@ namespace projecttest
                             Save_Order_Menu(orderId, menuId, quantity);
 
                             UpdateInventoryStock(menuId, quantity);
-                            
+
+                            InventoryHistoryChange();
                         }
 
 
