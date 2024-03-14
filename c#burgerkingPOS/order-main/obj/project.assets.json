@@ -1791,11 +1791,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Downloads\\burgerking 완료 (1)\\order-main\\OrderForm.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\새 폴더\\c#burgerkingPOS\\order-main\\OrderForm.csproj",
       "projectName": "OrderForm",
-      "projectPath": "C:\\Users\\user\\Downloads\\burgerking 완료 (1)\\order-main\\OrderForm.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\새 폴더\\c#burgerkingPOS\\order-main\\OrderForm.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Downloads\\burgerking 완료 (1)\\order-main\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\새 폴더\\c#burgerkingPOS\\order-main\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
