@@ -17,7 +17,7 @@ namespace WindowsFormsApp3
 {
     public partial class sale_payment : Form
     {
-        String Connection = "datasource=192.168.0.49;port=3306;Database=burgerking;Uid=root;Pwd=1234;";
+        String Connection = "datasource=127.0.0.1;port=3306;Database=burgerking;Uid=root;Pwd=1234;";
         public sale_payment()
         {
             InitializeComponent();

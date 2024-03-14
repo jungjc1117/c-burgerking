@@ -22,7 +22,7 @@ namespace projecttest
 
             Lb_Pay_Price.Text = main_Form.Lb_Total_Price_P;
 
-            db = new DB("192.168.0.49", "burgerking", "root", "1234");
+            db = new DB("127.0.0.1", "burgerking", "root", "1234");
 
         }
 

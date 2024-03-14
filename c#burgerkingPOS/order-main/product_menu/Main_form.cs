@@ -15,7 +15,7 @@ namespace OrderForm
         {
             InitializeComponent();
 
-            db = new DB("112.218.211.194", "burgerking", "root", "1234");
+            db = new DB("127.0.0.1", "burgerking", "root", "1234");
 
         }
 

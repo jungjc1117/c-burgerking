@@ -1,3 +1,4 @@
+CREATE DATABASE burgerking;
 
 CREATE TABLE IF NOT EXISTS `inventory` (
   `inventory_id` int NOT NULL AUTO_INCREMENT,
