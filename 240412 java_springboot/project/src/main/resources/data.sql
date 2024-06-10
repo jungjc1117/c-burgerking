@@ -1,17 +1,9 @@
 insert into user (id,password,email,nickname,name,gender,birthdate,phonenumber,user_date,weight,height)
-values ('aaa','a123456!','aaa@naver.com','일동','일길동','MALE','240322','01011111111',now(),60,170);
-
-insert into user (id,password,email,nickname,name,gender,birthdate,phonenumber,user_date,weight,height)
-values ('bbb','a123456!','bbb@naver.com','이동','이길동','MALE','240322','010122222222',now(),60,170);
-
-insert into user (id,password,email,nickname,name,gender,birthdate,phonenumber,user_date,weight,height)
-values ('ccc','a123456!','ccc@naver.com','삼동','삼길동','MALE','240322','01033333333',now(),60,170);
-
-insert into user (id,password,email,nickname,name,gender,birthdate,phonenumber,user_date,weight,height)
-values ('ddd','a123456!','ddd@naver.com','사동','사길동','MALE','240322','01044444444',now(),60,170);
-
-insert into user (id,password,email,nickname,name,gender,birthdate,phonenumber,user_date,weight,height)
-values ('eee','a123456!','eee@naver.com','오동','오길동','MALE','240322','01055555555',now(),60,170);
+values ('aaa','a123456!','aaa@naver.com','일동','일길동','MALE','240322','01011111111',now(),60,170),
+('bbb','a123456!','bbb@naver.com','이동','이길동','MALE','240322','010122222222',now(),60,170),
+('ccc','a123456!','ccc@naver.com','삼동','삼길동','MALE','240322','01033333333',now(),60,170),
+('ddd','a123456!','ddd@naver.com','사동','사길동','MALE','240322','01044444444',now(),60,170),
+('eee','a123456!','eee@naver.com','오동','오길동','MALE','240322','01055555555',now(),60,170);
 
 INSERT INTO diet (id, dname, ddatetime, dcalories)
 VALUES
@@ -46,68 +38,40 @@ VALUES
 ('aaa', '마라탕', '2024-03-29', 1500),
 ('aaa', '치킨', '2024-03-30', 2500),
 ('aaa', '돈까스', '2024-03-31', 2500);
+
 INSERT INTO exercise (ename, ecalories)
-VALUES ('걷기(가볍게)', 3);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('걷기(격렬하게)', 5);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('달리기(가볍게)', 8);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('달리기(격렬하게)', 10.5);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('계단오르기', 5.8);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('등산', 3.26);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('맨손체조', 7);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('수상스키', 3.33);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('수영', 17.4);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('스케이트', 8);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('스키', 7);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('스트레칭', 2.5);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('에어로빅', 5.2);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('요가', 2.5);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('윗몸일으키기', 2);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('자전거타기(가볍게)', 3.4);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('자전거타기(격렬하게)', 4.4);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('줄넘기', 8.9);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('팔굽혀펴기', 4.2);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('볼링', 3.3);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('야구', 6);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('축구', 9);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('탁구', 6);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('농구', 8);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('배구', 7);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('배드민턴', 5.76);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('테니스', 7.2);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('목욕', 1.4);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('손빨래', 3.16);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('요리', 1.13);
-INSERT INTO exercise (ename, ecalories)
-VALUES ('청소하기', 1.15);
+VALUES 
+('걷기(가볍게)', 3),
+('걷기(격렬하게)', 5),
+('달리기(가볍게)', 8),
+('달리기(격렬하게)', 10.5),
+('계단오르기', 5.8),
+('등산', 3.26),
+('맨손체조', 7),
+('수상스키', 3.33),
+('수영', 17.4),
+('스케이트', 8),
+('스키', 7),
+('스트레칭', 2.5),
+('에어로빅', 5.2),
+('요가', 2.5),
+('윗몸일으키기', 2),
+('자전거타기(가볍게)', 3.4),
+('자전거타기(격렬하게)', 4.4),
+('줄넘기', 8.9),
+('팔굽혀펴기', 4.2),
+('볼링', 3.3),
+('야구', 6),
+('축구', 9),
+('탁구', 6),
+('농구', 8),
+('배구', 7),
+('배드민턴', 5.76),
+('테니스', 7.2),
+('목욕', 1.4),
+('손빨래', 3.16),
+('요리', 1.13),
+('청소하기', 1.15);
 INSERT INTO record (ename, id, emin, rdatetime)
 VALUES
 ('달리기(격렬하게)', 'aaa', '60', '2024-03-01'),
