@@ -1,2 +1,49 @@
-PORTFOLIO (기업 요구를 반영한 프로젝트 중심 JAVA 백엔드 테스트 주도 개발자 양성 과정)(2023.12.29~2024.06.17)<br/>
-사용자프로그램: Intellij, Eclipse, Docker, Jenkins, C#, MySql, MariaDB, DBMS, ERD, VSCode,, Git, Github, Postman
+## 포트폴리오: 기업 요구를 반영한 프로젝트 중심 JAVA 백엔드 테스트 주도 개발자 양성 과정
+### 기간: 2023.12.29 ~ 2024.06.17
+
+### 사용 기술 및 도구
+- **개발 환경:** Intellij, Eclipse, VSCode
+- **프로그래밍 언어:** Java, C#
+- **프레임워크 및 라이브러리:** Spring Boot, React
+- **데이터베이스:** MySQL, MariaDB
+- **도구:** Docker, Jenkins, Git, Github, Postman
+- **기타:** DBMS, ERD
+
+### 프로젝트 목록
+
+#### 1. JAVA_Green_Mini
+- **기간:** 2024.02.08
+- **사용 도구:** Eclipse, MariaDB
+- **설명:** 주소록 관리 시스템
+- **주요 기능:**
+  - 사용자 등록, 수정, 삭제
+  - 주소록 검색 및 조회
+  - 데이터베이스 연동을 통한 정보 저장
+
+#### 2. c#burgerkingPOS
+- **기간:** 2024.03.14
+- **사용 도구:** C#, MariaDB
+- **설명:** 버거킹 POS 시스템
+- **주요 기능:**
+  - 주문 처리 및 결제 기능
+  - 메뉴 관리 시스템
+  - 판매 내역 조회
+
+#### 3. java_springboot
+- **기간:** 2024.04.12
+- **사용 도구:** Spring Boot, MariaDB
+- **설명:** 식단 정보 관리 프로젝트
+- **주요 기능:**
+  - 식단 정보 입력 및 수정
+  - 식단 추천 시스템
+  - 사용자별 식단 기록 조회
+
+#### 4. java_springboot_final
+- **기간:** 2024.06.07
+- **사용 도구:** Spring Boot, MariaDB, React
+- **설명:** 커피 체인점 관리 프로젝트
+- **주요 기능:**
+  - 매장 정보 관리
+  - 메뉴 및 재고 관리
+  - 주문 처리 및 결제 시스템
+  - 고객 피드백 수집 및 분석
